@@ -5,25 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flexbox - Ejercicio Práctico</title>
   <style>
-    /* Reset básico */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Contenedor principal ocupa toda la pantalla */
     #contenedor {
       display: flex;
-      justify-content: space-around; /* Espacio igual entre cajas */
-      align-items: center;          /* Centrado vertical y horizontal */
-      min-height: 100vh;            /* Ocupa toda la altura de la pantalla */
+      justify-content: space-around; 
+      align-items: center;          
+      min-height: 100vh;            
       background-color: #f0f0f0;
-      flex-wrap: wrap;              /* Permite el cambio a columna */
-      gap: 10px;                    /* Espacio entre cajas (opcional, mejora visual) */
+      flex-wrap: wrap;              
+      gap: 10px;                    
     }
 
-    /* Estilo común para las cajas */
     .caja {
       background-color: #3498db;
       color: white;
@@ -38,11 +35,11 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Para pantallas menores a 600px: apilar en columna */
+
     @media (max-width: 600px) {
       #contenedor {
         flex-direction: column;
-        justify-content: center; /* Centra verticalmente en columna */
+        justify-content: center; 
       }
     }
   </style>
